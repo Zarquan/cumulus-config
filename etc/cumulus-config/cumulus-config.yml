@@ -128,7 +128,7 @@ cumulus_iris_gaia_dev:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: 125
     cores: 400
     ram: 786432 # 768GB
     floating_ips: 6
@@ -144,7 +144,7 @@ cumulus_iris_gaia_test:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: 125
     cores: 400
     ram: 786432 # 768GB
     floating_ips: 6
@@ -160,7 +160,7 @@ cumulus_iris_gaia_prod:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: 125
     cores: 400
     ram: 786432 # 768GB
     floating_ips: 6
