@@ -128,14 +128,14 @@ cumulus_iris_gaia_dev:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: -1
     cores: 400
-    ram: 786432 # 768GB
+    ram: -1
     floating_ips: 6
     routers: 4
     ports: 500
-    volumes: 20
-    gigabytes: 5120
+    volumes: -1
+    gigabytes: 49152
 
 cumulus_iris_gaia_test:
   name: iris-gaia-test
@@ -144,14 +144,14 @@ cumulus_iris_gaia_test:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: -1
     cores: 400
-    ram: 786432 # 768GB
+    ram: -1
     floating_ips: 6
     routers: 4
     ports: 500
-    volumes: 20
-    gigabytes: 5120
+    volumes: -1
+    gigabytes: 49152
 
 cumulus_iris_gaia_prod:
   name: iris-gaia-prod
@@ -160,14 +160,14 @@ cumulus_iris_gaia_prod:
   users: "{{ cumulus_iris_gaia_users }}"
   user_domain: "{{ federated_domain }}"
   quotas:
-    instances: 20
+    instances: -1
     cores: 400
-    ram: 786432 # 768GB
+    ram: -1
     floating_ips: 6
     routers: 4
     ports: 500
-    volumes: 20
-    gigabytes: 5120
+    volumes: -1
+    gigabytes: 49152
 
 cumulus_iris_gaia_users:
    - name: "pfb29@cam.ac.uk"
