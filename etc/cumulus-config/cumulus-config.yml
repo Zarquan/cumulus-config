@@ -18,7 +18,7 @@ cumulus_projects:
   - "{{ cumulus_iris_ccfe }}"
   - "{{ cumulus_iris_ral_dtaas }}"
   - "{{ cumulus_iris_ska }}"
-  - "{{ cumulus_iris_jhub_da }}"
+#  - "{{ cumulus_iris_jhub_da }}"
   - "{{ cumulus_rcp_dev_project }}"
   - "{{ cumulus_demo_project }}"
   - "{{ cumulus_services_project }}"
@@ -872,6 +872,12 @@ cumulus_flavors:
   - "{{ cumulus_flavor_cclake_opt_large_2MB }}"
   - "{{ cumulus_flavor_cclake_opt_large_1GB }}"
 #  - "{{ cumulus_flavor_cclake_opt_xlarge }}"
+  - "{{ cumulus_flavor_gaia_cclake_54vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_26vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_12vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_6vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_2vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_1vcpu }}"
 
 cumulus_flavor_octavia_small:
   name: "octavia.small"
@@ -995,6 +1001,53 @@ cumulus_flavor_cclake_opt_large_1GB:
     "hw:cpu_maxcores": 27
     "hw:cpu_maxthreads": 2
 
+cumulus_flavor_gaia_cclake_54vcpu:
+  name: "gaia.cclake.54vcpu"
+  vcpus: 54
+  ram: 94208
+  disk: 20
+  ephemeral: 420
+  is_public: false
+
+cumulus_flavor_gaia_cclake_26vcpu:
+  name: "gaia.cclake.26vcpu"
+  vcpus: 26
+  ram: 47104
+  disk: 20
+  ephemeral: 200
+  is_public: false
+
+cumulus_flavor_gaia_cclake_12vcpu:
+  name: "gaia.cclake.12vcpu"
+  vcpus: 12
+  ram: 22528
+  disk: 20
+  ephemeral: 90
+  is_public: false
+
+cumulus_flavor_gaia_cclake_6vcpu:
+  name: "gaia.cclake.6vcpu"
+  vcpus: 6
+  ram: 10240
+  disk: 20
+  ephemeral: 35
+  is_public: false
+
+cumulus_flavor_gaia_cclake_2vcpu:
+  name: "gaia.cclake.2vcpu"
+  vcpus: 2
+  ram: 4096
+  disk: 20
+  ephemeral: 25 
+  is_public: false
+
+cumulus_flavor_gaia_cclake_1vcpu:
+  name: "gaia.cclake.1vcpu"
+  vcpus: 1
+  ram: 2048
+  disk: 20
+  ephemeral: 12
+  is_public: false
 
 ###############################################################################
 # Software images for cumulus
