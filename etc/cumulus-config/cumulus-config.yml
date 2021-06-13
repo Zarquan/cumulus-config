@@ -1037,16 +1037,16 @@ cumulus_flavor_gaia_cclake_2vcpu:
   name: "gaia.cclake.2vcpu"
   vcpus: 2
   ram: 4096
-  disk: 20
-  ephemeral: 25 
+  disk: 25
+  ephemeral: 0 
   is_public: false
 
 cumulus_flavor_gaia_cclake_1vcpu:
   name: "gaia.cclake.1vcpu"
   vcpus: 1
   ram: 2048
-  disk: 20
-  ephemeral: 12
+  disk: 12
+  ephemeral: 0
   is_public: false
 
 ###############################################################################
