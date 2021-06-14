@@ -872,10 +872,11 @@ cumulus_flavors:
   - "{{ cumulus_flavor_cclake_opt_large_2MB }}"
   - "{{ cumulus_flavor_cclake_opt_large_1GB }}"
 #  - "{{ cumulus_flavor_cclake_opt_xlarge }}"
-  - "{{ cumulus_flavor_gaia_cclake_54vcpu }}"
-  - "{{ cumulus_flavor_gaia_cclake_26vcpu }}"
-  - "{{ cumulus_flavor_gaia_cclake_12vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_55vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_27vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_13vcpu }}"
   - "{{ cumulus_flavor_gaia_cclake_6vcpu }}"
+  - "{{ cumulus_flavor_gaia_cclake_3vcpu }}"
   - "{{ cumulus_flavor_gaia_cclake_2vcpu }}"
   - "{{ cumulus_flavor_gaia_cclake_1vcpu }}"
 
@@ -1001,28 +1002,28 @@ cumulus_flavor_cclake_opt_large_1GB:
     "hw:cpu_maxcores": 27
     "hw:cpu_maxthreads": 2
 
-cumulus_flavor_gaia_cclake_54vcpu:
-  name: "gaia.cclake.54vcpu"
-  vcpus: 54
-  ram: 94208
+cumulus_flavor_gaia_cclake_55vcpu:
+  name: "gaia.cclake.55vcpu"
+  vcpus: 55
+  ram: 92160
   disk: 20
-  ephemeral: 420
+  ephemeral: 380
   is_public: false
 
-cumulus_flavor_gaia_cclake_26vcpu:
-  name: "gaia.cclake.26vcpu"
-  vcpus: 26
-  ram: 47104
+cumulus_flavor_gaia_cclake_27vcpu:
+  name: "gaia.cclake.27vcpu"
+  vcpus: 27
+  ram: 46080
   disk: 20
-  ephemeral: 200
+  ephemeral: 180
   is_public: false
 
-cumulus_flavor_gaia_cclake_12vcpu:
-  name: "gaia.cclake.12vcpu"
-  vcpus: 12
-  ram: 22528
+cumulus_flavor_gaia_cclake_13vcpu:
+  name: "gaia.cclake.13vcpu"
+  vcpus: 13
+  ram: 23040
   disk: 20
-  ephemeral: 90
+  ephemeral: 80
   is_public: false
 
 cumulus_flavor_gaia_cclake_6vcpu:
@@ -1030,22 +1031,30 @@ cumulus_flavor_gaia_cclake_6vcpu:
   vcpus: 6
   ram: 10240
   disk: 20
-  ephemeral: 35
+  ephemeral: 24
+  is_public: false
+
+cumulus_flavor_gaia_cclake_3vcpu:
+  name: "gaia.cclake.3vcpu"
+  vcpus: 3
+  ram: 5120
+  disk: 22
+  ephemeral: 0 
   is_public: false
 
 cumulus_flavor_gaia_cclake_2vcpu:
   name: "gaia.cclake.2vcpu"
   vcpus: 2
-  ram: 4096
-  disk: 25
+  ram: 3351
+  disk: 14
   ephemeral: 0 
   is_public: false
 
 cumulus_flavor_gaia_cclake_1vcpu:
   name: "gaia.cclake.1vcpu"
   vcpus: 1
-  ram: 2048
-  disk: 12
+  ram: 1675
+  disk: 8
   ephemeral: 0
   is_public: false
 
